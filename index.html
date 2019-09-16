@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,34 @@
     <title>Login - AlphaCode</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <section class="container">
 
         <div class="sidebar">
 
-           <h2>Welcome To AlphaCode</h2>
-           <p>Enter your details </p>
-           <p>and start your journey with us </p>
-           <button class="signUp__button">Sign Up</button>
+            <h2>Welcome To AlphaCode</h2>
+            <p>Enter your details </p>
+            <p>and start your journey with us </p>
+            <button class="signUp__button">Sign Up</button>
 
         </div>
 
         <div class="login_form_container">
             <h2>Sign in to Code</h2>
-                <input type="text" class="username_box" placeholder="Username">
-                <input type="text" class="password_box" placeholder="Password">
+            <form method="POST" action="login.php">
+                <input type="text" name="uname" class="username_box" placeholder="Username">
+                <input type="text" name="pword" class="password_box" placeholder="Password">
                 <a href="#">Forgot Password</a>
-                <button class="signIn__button">Sign In</button>
+                <button class="signIn__button" type="submit">Sign In</button>
+            </form>
 
-            
+
         </div>
 
     </section>
-    
+
 </body>
+
 </html>
