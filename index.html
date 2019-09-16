@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,44 @@
     <title>Login - AlphaCode</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <section class="container">
 
         <div class="sidebar">
 
-           <h2>Welcome To AlphaCode</h2>
-           <p>Enter your details </p>
-           <p>and start your journey with us </p>
-           <button class="signUp__button">Sign Up</button>
+            <h2>Welcome To AlphaCode</h2>
+            <p>Enter your details </p>
+            <p>and start your journey with us </p>
+            <button class="signUp__button">Sign Up</button>
 
         </div>
 
-        <div class="login_form_container">
-            <h2>Sign in to Code</h2>
-                <input type="text" class="username_box" placeholder="Username">
-                <input type="text" class="password_box" placeholder="Password">
+
+        <form class="login_form_container" method="post" name="my form">
+            <legend> sign-in details</legend>
+            <fieldset>
+                <h2>Sign in to Code</h2>
+                <input type="text" name="username_box" placeholder="Username" required minlength="6" maxlength="6" >
+                <input type="text"  id="password" name="password_box" placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required >
                 <a href="#">Forgot Password</a>
                 <button class="signIn__button">Sign In</button>
+            </fieldset>
+        </form>
+        <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div>
 
-            
-        </div>
 
     </section>
-    
+<script src="script.js>
 </body>
+
 </html>
