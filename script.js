@@ -43,4 +43,4 @@ myInput.onfocus = ()=> {
     } else {
       number.classList.remove("valid");
       number.classList.add("invalid");
-    }
+    }}

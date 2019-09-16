@@ -22,10 +22,11 @@ if ($user_found === FALSE) {
     $_SESSION['msg'] = "<script type='text/javascript'>toastr.error('Wrong Login Details')</script>";
     echo $msg;
 } else {
-   $_SESSION['msg']  = "<script type='text/javascript'>toastr.success('Welcome $uname')</script>";
+    $_SESSION['msg']  = "<script type='text/javascript'>toastr.success('Welcome $uname')</script>";
 }
 
 SESSION_START();
+$_SESSION['name'] = $uname;
 //redirect to the dashboard page using php built-in header method
 header("Location: index.php");
 //replace the index.html with the dashboard URL
