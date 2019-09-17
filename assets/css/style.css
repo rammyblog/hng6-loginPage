@@ -1,48 +1,91 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    bottom: 0;
+    top: 0;
   }
 
-  body{
-    font-family: 'Roboto', sans-serif;
-  }
 
 .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+} */
+
+body{
+font-family: 'Roboto', sans-serif;
 }
 
-
+.main-content{
+    width: auto !important;
+}
 
 .sidebar{
-    display: flex;
-    flex-direction: column;
     background: linear-gradient(90deg, #0EC7E0 0%, #2D9CDB 0.01%);
     color: #fff;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 140%;
+    height: 100vh;
     line-height: 22px;
  
 }
 
-.sidebar h1{
+.sidebar-signup{
+    background: linear-gradient(90deg, #ffffff 0%, #fcfcfc 0.01%);
+    color: #2D9CDB;
+    text-align: center;
+    height: 100vh;
+    line-height: 22px;
+}
+
+.sidebar-content{
+    margin-top: 30%;
+}
+
+.sidebar-content h1{
     padding: 10px;
-
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 45px;
+    
 }
 
-.sidebar p{
+.sidebar-content p{
     font-family: 'Basic', sans-serif;
-    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
 }
 
-.sidebar img{
+.sidebar-content img{
     position: absolute;
-    top: 5px;
+    width: 60px;
+    height: 60px;
     left: 5px;
-    width: 50px;
+    top: 2px;
+}
+
+.signUp__button{
+    background: #fff;
+    border: 10px solid #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #2D9CDB;
+    margin-top: 30px;
+
+}
+
+.signUp__button:hover{
+    text-decoration: none;
+    color: #2D9CDB;
 }
 
 .login_form_container h2{
@@ -51,6 +94,11 @@
     text-align: center;
     margin-bottom: 40px;
 
+}
+
+.login_form-signup{
+    background: linear-gradient(90deg, #0EC7E0 0%, #2D9CDB 0.01%);
+    color: #fff;
 }
 
 .login_form_container{
@@ -102,32 +150,30 @@
     clear: both;
 
 }
-
-.signUp__button{
-    
-    background: #fff;
+.signIn__button_2{
+    display: block;
+    background:  linear-gradient(90deg, #ffffff 0%, #fcfcfc 0.01%);
     border: 1px solid #ffffff;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    width: 120px;
+    box-sizing: border-box;
+    width: 300px;
     height: 50px;
     margin: 10px;
     cursor: pointer;
-    border-radius: 60px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     color: #2D9CDB;
-    margin-top: 30px;
-
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    clear: both;
 }
 
 #message{
     display: none;
 }
 
+.forgot {
+    text-align: left; 
+    margin-bottom:30px;
+  }
 @media(max-width: 600px){
 
     .container{

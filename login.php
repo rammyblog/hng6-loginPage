@@ -1,7 +1,8 @@
 
 <?php
-$uname = $_POST['uname'];
-$pword = $_POST['pword'];
+if(isset($_POST['login'])){
+$uname = filter_var($_POST['uname'], FILTER_SANITIZE_STRING);
+$pword = filter_var($_POST['pword'], FILTER_SANITIZE_STRING);
 session_start();
 $url = 'userdata.json'; // path to JSON file
 $data = file_get_contents($url); // put the contents of the file into a variable
@@ -30,4 +31,5 @@ $_SESSION['name'] = $uname;
 //redirect to the dashboard page using php built-in header method
 header("Location: index.php");
 //replace the index.html with the dashboard URL
+}
 ?>
