@@ -48,6 +48,12 @@
     height: 50px;
     margin: 10px
 }
+input:valid{
+    border: 2px solid green;
+}
+input:invalid{
+    border: 2px solid red;
+}
 
 .login_form_container a{
     font-weight: 300;
