@@ -40,7 +40,7 @@
             <h2>Sign in to Code</h2>
             <form method="POST" action="login.php">
                 <input type="text" name="uname" class="username_box" placeholder="Username" required minlength="3">
-                <input type="password" id="pword" name="pword" class="password_box" placeholder="Password" pattern='[a-zA-Z]{3,15}' title="Must contain at least one uppercase and  lowercase letter, and at least 3 or more characters" required>
+                <input type="password" id="pword" name="pword" class="password_box" placeholder="Password" pattern='[a-zA-Z]{3,15}' title="Must contain at least one uppercase or lowercase letter, and at least 3 or more characters" required>
                 <a href="#">Forgot Password?</a>
                 <button class="signIn__button" type="submit">Sign In</button>
             </form>

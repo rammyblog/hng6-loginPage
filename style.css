@@ -25,6 +25,7 @@
     justify-content: center;
     height: 140%;
     line-height: 22px;
+ 
 }
 
 .sidebar h1{
@@ -46,6 +47,7 @@
 
 .login_form_container h2{
     color: #585858;
+
     text-align: center;
     margin-bottom: 40px;
 
