@@ -4,12 +4,13 @@
     box-sizing: border-box;
   }
 
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
 
 .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* margin-top: 100px; */
-    /* margin: 100px; */
 }
 
 
@@ -22,13 +23,32 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 140%
+    height: 140%;
+    line-height: 22px;
 }
 
+.sidebar h1{
+    padding: 10px;
+
+}
+
+.sidebar p{
+    font-family: 'Basic', sans-serif;
+    font-size: 20px;
+}
+
+.sidebar img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+}
 
 .login_form_container h2{
-    
     color: #585858;
+    text-align: center;
+    margin-bottom: 40px;
+
 }
 
 .login_form_container{
@@ -40,19 +60,17 @@
 
 .login_form_container input{
     display: block;
-    background: rgba(33, 24, 87, 0.08);
+    background: #f5f5f5;
     border: 1px solid #211857;
     box-sizing: border-box;
     border-radius: 6px;
     width: 300px;
     height: 50px;
-    margin: 10px
-}
-input:valid{
-    border: 2px solid green;
-}
-input:invalid{
-    border: 2px solid red;
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px;
+    color: #797979;
+
 }
 
 .login_form_container a{
@@ -62,7 +80,8 @@ input:invalid{
     text-decoration-line: underline;
     text-transform: lowercase;
     color: #797979;
-    text-align: right;
+    float: right;
+    margin-bottom: 20px;
 }
 
 .signIn__button{    
@@ -74,6 +93,11 @@ input:invalid{
     height: 50px;
     margin: 10px;
     cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    clear: both;
 
 }
 
@@ -81,8 +105,11 @@ input:invalid{
     
     background: #fff;
     border: 1px solid #ffffff;
-
-    width: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    width: 120px;
     height: 50px;
     margin: 10px;
     cursor: pointer;
@@ -91,5 +118,22 @@ input:invalid{
     align-items: center;
     justify-content: center;
     color: #2D9CDB;
+    margin-top: 30px;
+
+}
+
+#message{
+    display: none;
+}
+
+@media(max-width: 600px){
+
+    .container{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+
 
 }
