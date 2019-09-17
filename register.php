@@ -12,10 +12,10 @@ if(isset($_POST['login'])){
     foreach ($details as $detail) {
         /* Check Username and Password existence in defined array */
         if ($detail["username"] == $uname) {
-            $user_found = TRUE;
+            $user_found = true;
             break;
         }else{
-            $user_found = FALSE;
+            $user_found = false;
         }
     }
     if(!$user_found){
@@ -30,8 +30,11 @@ if(isset($_POST['login'])){
         $_SESSION['msg']  = "<script type='text/javascript'>toastr.success('Account was successfully added')</script>";
     }else{
         $_SESSION['msg'] = "<script type='text/javascript'>toastr.error('Failed to add account, $uname already exist')</script>";
-       
     }
-    
+SESSION_START();
+$_SESSION['name'] = $uname;
+//redirect to the dashboard page using php built-in header method
+header("Location: index.php");
+//replace the index.html with the dashboard URL
 }
 ?>
