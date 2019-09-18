@@ -3,16 +3,25 @@ const letter = document.getElementById('letter');
 const number = document.getElementById('number');
 const capital= document.getElementById('capital');
 const length =  document.getElementById('length');
+const passwordConfirm = document.getElementById('cpword');
 /* alerts user on how to set password*/
 myInput.onfocus = ()=> {
     document.getElementById("message").style.display = "block";
   }
-  
+
+  passwordConfirm.onfocus = () => {
+  document.getElementById('password-message').style.display = 'block';
+}
   // When the user clicks outside of the password field, hide the message box
   myInput.addEventListener("blur", function(){
       document.getElementById("message").style.display = "none";
   }
   )
+
+  passwordConfirm.addEventListener("blur", function(){
+    document.getElementById("password-message").style.display = "none";
+}
+)
   
   // When the user starts to type something inside the password field
 // Not Needed becuse our password is fixed

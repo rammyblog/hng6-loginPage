@@ -1,114 +1,110 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    bottom: 0;
-    top: 0;
   }
 
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
 
-.container{
+.main-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-} */
-
-body{
-font-family: 'Roboto', sans-serif;
 }
 
-.main-content{
-    width: auto !important;
-}
 
 .sidebar{
-    background: linear-gradient(90deg, #0EC7E0 0%, #2D9CDB 0.01%);
+    display: flex;
+    flex-direction: column;
+    background: #fff;
     color: #fff;
     text-align: center;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     line-height: 22px;
- 
+    background: linear-gradient(90deg, #0EC7E0 0%, #2D9CDB 0.01%);
 }
 
-.sidebar-signup{
-    background: linear-gradient(90deg, #ffffff 0%, #fcfcfc 0.01%);
-    color: #2D9CDB;
+.sidebar_register{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #585858;
     text-align: center;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     line-height: 22px;
-}
-
-.sidebar-content{
-    margin-top: 30%;
-}
-
-.sidebar-content h1{
-    padding: 10px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 45px;
     
 }
 
-.sidebar-content p{
+.sidebar h1{
+    padding: 10px;
+
+}
+
+.sidebar p{
     font-family: 'Basic', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 40px;
-}
-
-.sidebar-content img{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 5px;
-    top: 2px;
-}
-
-.signUp__button{
-    background: #fff;
-    border: 10px solid #ffffff;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
     font-size: 20px;
-    cursor: pointer;
-    border-radius: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #2D9CDB;
-    margin-top: 30px;
-
 }
 
-.signUp__button:hover{
-    text-decoration: none;
-    color: #2D9CDB;
+.sidebar img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
 }
 
 .login_form_container h2{
     color: #585858;
-
     text-align: center;
     margin-bottom: 40px;
 
 }
 
-.login_form-signup{
-    background: linear-gradient(90deg, #0EC7E0 0%, #2D9CDB 0.01%);
-    color: #fff;
-}
-
 .login_form_container{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    min-height: 100vh;
+    
+    
+}
+
+.signUp_form_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px; 
+    background: linear-gradient(90deg, #0EC7E0 0%, #2D9CDB 0.01%);
+    min-height: 100vh
+}
+.signUp_form_container h2{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .login_form_container input{
+    display: block;
+    background: #f5f5f5;
+    border: 1px solid #211857;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px;
+    color: #797979;
+
+}
+
+.signup-Input{
     display: block;
     background: #f5f5f5;
     border: 1px solid #211857;
@@ -132,6 +128,7 @@ font-family: 'Roboto', sans-serif;
     color: #797979;
     float: right;
     margin-bottom: 20px;
+
 }
 
 .signIn__button{    
@@ -150,38 +147,52 @@ font-family: 'Roboto', sans-serif;
     clear: both;
 
 }
-.signIn__button_2{
-    display: block;
-    background:  linear-gradient(90deg, #ffffff 0%, #fcfcfc 0.01%);
+
+
+
+.signUp__button{
+    
+    background: #fff;
     border: 1px solid #ffffff;
-    box-sizing: border-box;
-    width: 300px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    width: 120px;
     height: 50px;
     margin: 10px;
     cursor: pointer;
+    border-radius: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     color: #2D9CDB;
-    font-size: 17px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    clear: both;
+    margin-top: 30px;
+
+}
+
+.sign-up-register{
+    background: #2D9CDB;
+    color: #ffffff
+    
 }
 
 #message{
     display: none;
 }
+#password-message{
+    display: none;
+}
 
-.forgot {
-    text-align: left; 
-    margin-bottom:30px;
-  }
 @media(max-width: 600px){
 
-    .container{
+    .main-container{
         display: block;
     }
-    .sidebar{
+    .sidebar, .sidebar_register{
         display: none;
     }
+
 
 
 }
