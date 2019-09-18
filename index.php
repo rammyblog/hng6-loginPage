@@ -45,6 +45,7 @@
         <a href="#">Forgot Password?</a>
         <button class="signIn__button" name="login" type="submit">Sign In</button>
     </form>
+    <p class="mobileSign-in">Don't have an account?<a href="signup.php">  Sign up now</a></p>
     <div class="alert alert-danger" id="message">
         <h5>Password must contain the following:</h5>
         <p id="letter" class="invalid">A lowercase letter</p>

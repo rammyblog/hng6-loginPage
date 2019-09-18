@@ -50,6 +50,7 @@
                        
                             <button id="submitBtn" class="signIn__button" name="sign_up" type="submit">Sign Up</button>
                         </form>
+                        <p class="mobileSign-up">Already own an account? <a href="index.php">Sign in now</a></p>
                         <div class="alert alert-danger" id="password-message">    
                                 <p id="confirmPassMessage">Make sure the password match each other *winks*</p>     
                             </div>

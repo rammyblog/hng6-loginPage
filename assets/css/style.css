@@ -186,6 +186,30 @@
     display: none;
 }
 
+.mobileSign-up{
+    display: none;
+}
+
+.mobileSign-up a{
+    color: #fff
+}
+
+.mobileSign-in{
+    display: none;
+    margin: 0;
+
+}
+.mobileSign-in a{
+  text-decoration: none;
+  font-size: 1rem;
+font-weight: 400;
+color: #2D9CDB;
+line-height: inherit;
+text-transform: none;
+padding-left: 5px;
+}
+
+
 @media(max-width: 600px){
 
     .main-container{
@@ -194,7 +218,13 @@
     .sidebar, .sidebar_register{
         display: none;
     }
-
+    .mobileSign-up{
+        display: block;
+    }
+    .mobileSign-in{
+        display: block;
+    
+    }
 
 
 }
