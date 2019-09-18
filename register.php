@@ -1,6 +1,6 @@
 
 <?php
-if(isset($_POST['login'])){
+if(isset($_POST['sign_up'])){
     $uname = filter_var($_POST['uname'], FILTER_SANITIZE_STRING);
     $pword = filter_var($_POST['pword'], FILTER_SANITIZE_STRING);
     session_start();

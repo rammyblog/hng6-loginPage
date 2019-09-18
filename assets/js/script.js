@@ -4,6 +4,19 @@ const number = document.getElementById('number');
 const capital= document.getElementById('capital');
 const length =  document.getElementById('length');
 const passwordConfirm = document.getElementById('cpword');
+const password = document.getElementById('pword')
+const submitBtn = document.getElementById('submitBtn')
+
+
+submitBtn.addEventListener('click', function (e) {
+
+    if(password.value !== passwordConfirm.value){
+      document.getElementById('password-message').style.display = 'block';
+      e.preventDefault();
+    }
+  
+})
+
 /* alerts user on how to set password*/
 myInput.onfocus = ()=> {
     document.getElementById("message").style.display = "block";

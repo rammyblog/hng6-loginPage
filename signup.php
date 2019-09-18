@@ -37,36 +37,36 @@
     <h2>Create Account</h2>
         <form method="POST" action="register.php">
         <input type="text" name="uname" class="username_box signup-Input" placeholder="Username" required minlength="3">
-            <input type="password" id="pword" name="pword" class="password_box signup-Input" placeholder="Password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}' title="Must contain at least one uppercase 
+            <input type="password" id="pword" name="pword" class="password_box signup-Input" placeholder="Password"
+             pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}' title="Must contain at least one uppercase 
                             and  lowercase letter, and at least 5 or more characters" required>
 
-                    <div id="message">
-                    <h5>Password must contain the following:</h5>
-                    <p id="letter" class="invalid">A lowercase letter</p>
-                    <p id="capital" class="invalid">A capital (uppercase) letter</p>
-                    <p id="length" class="invalid">Minimum 5 characters</p>
-                    </div>
+        
                   
               
                             <input type="password" id="cpword" name="cpword" class="password_box signup-Input" placeholder="Confirm Password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}' title="Must contain at least one
                              uppercase and  lowercase letter, and at least 5 or more characters" required>
-                             <div id="password-message">    
+                 
+                       
+                            <button id="submitBtn" class="signIn__button" name="sign_up" type="submit">Sign Up</button>
+                        </form>
+                        <div class="alert alert-danger" id="password-message">    
                                 <p id="confirmPassMessage">Make sure the password match each other *winks*</p>     
                             </div>
                   
-                       
-                            <button class="signIn__button" name="login" type="submit">Sign Up</button>
-                        </form>
-
-</div>
-<!--    
-                    <div id="message">
+                        <div class="alert alert-danger" id="message">
+                        
                     <h5>Password must contain the following:</h5>
                     <p id="letter" class="invalid">A lowercase letter</p>
                     <p id="capital" class="invalid">A capital (uppercase) letter</p>
+                    <p id="number" class="invalid">A Number</p>
                     <p id="length" class="invalid">Minimum 5 characters</p>
-                    </div> -->
+                    </div>
 
+
+
+
+</div>
 
 
 </section>

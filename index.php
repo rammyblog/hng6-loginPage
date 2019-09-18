@@ -41,11 +41,11 @@
     <h2>Sign in to Code</h2>
     <form method="POST" action="login.php">
         <input type="text" name="uname" class="username_box" placeholder="Username" required minlength="3">
-        <input type="password" id="pword" name="pword" class="password_box" placeholder="Password" pattern='[a-zA-Z]{3,15}' title="Must contain at least one uppercase and  lowercase letter, and at least 3 or more characters" required>
+        <input type="password" id="pword" name="pword" class="password_box" placeholder="Password" minlength="3" title="Must contain least 3 or more characters" required>
         <a href="#">Forgot Password?</a>
-        <button class="signIn__button" type="submit">Sign In</button>
+        <button class="signIn__button" name="login" type="submit">Sign In</button>
     </form>
-    <div id="message">
+    <div class="alert alert-danger" id="message">
         <h5>Password must contain the following:</h5>
         <p id="letter" class="invalid">A lowercase letter</p>
         <p id="capital" class="invalid">A capital (uppercase) letter</p>
