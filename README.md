@@ -1,6 +1,3 @@
-# hng6-loginPage
-## I used CSS GRID
-## Continue work on the styling
 # Working on our First Task( LOGIN & SIGN-UP PAGE)
 The name of our team is **TEAM ALPHA CODE**.
 This is a documentation of how the login and sign up page was created which involves the Design, Front End and Back End.
