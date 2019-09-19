@@ -11,6 +11,12 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.logo-box{
+background: #0000;
+}
+.logo{
+height: 35px;
+}
 .navbar a:link{
     text-decoration: none;
     font-size:20px;
@@ -20,15 +26,34 @@ body{
 .main-content{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
-    grid-gap: 5em;
+    grid-gap: 3em;
+    
 } 
-.text{
-    margin:50px;
-    justify-content: space-evenly;
-    position: relative;
-    top: 150px;
+
+.box1{
+    position:relative;
+    top: 60%;
+    left:20%;
+    translate: transform(10%,80%);
+}
+
+.mainsub{
+    display: block;
+    font-weight:500;
+    
     
 }
+.mainsub2{
+    display: block;
+    font-weight: 1000; 
+    font-size: 2em;
+}
+
+.mainsub3{
+font-weight:500;
+
+}
+
 .button{
     background: #4580df;
     color: #fff;
@@ -39,7 +64,7 @@ body{
 }
 .box2{
 position: relative;
-top: 300px;
+top: 60%;
 }
 input{
     width:80%;
