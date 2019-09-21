@@ -10,7 +10,7 @@
   }
 
 
-
+/*modified grid*/
 .navbar{
     display: grid;
     grid-template-columns: repeat(autofill, minmax(400px, 1fr));
